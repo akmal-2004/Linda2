@@ -209,13 +209,33 @@ def execute_cmd(cmd: str):
     elif cmd == 'volumeup':
         for _ in range(0,5):
             pyautogui.press('volumeup')
+
+    elif cmd == 'volumeup_less':
+        for _ in range(0,2):
+            pyautogui.press('volumeup')
     
     elif cmd == 'volumedown':
         for _ in range(0,5):
             pyautogui.press('volumedown')
 
+    elif cmd == 'volumedown_less':
+        for _ in range(0,2):
+            pyautogui.press('volumedown')
+
     elif cmd == 'volumemute':
         pyautogui.press('volumemute')
+
+    # elif cmd == 'brightness_up':
+    #     pyautogui.keyDown('fn')
+    #     pyautogui.press('f3')
+    #     pyautogui.press('f3')
+    #     pyautogui.keyUp('fn')
+
+    # elif cmd == 'brightness_down':
+    #     pyautogui.keyDown('fn')
+    #     pyautogui.press('f2')
+    #     pyautogui.press('f2')
+    #     pyautogui.keyUp('fn')
 
     elif cmd == 'pressspace':
         pyautogui.press('space')
