@@ -194,7 +194,7 @@ def execute_cmd(cmd: str):
         pyautogui.hotkey('alt', 'tab')
 
     elif cmd == 'hideallwindows':
-        pyautogui.hotkey('win', 'd')
+        pyautogui.hotkey('win', 'm')
 
     elif cmd == 'showallwindows':
         pyautogui.hotkey('win', 'shift', 'm')
